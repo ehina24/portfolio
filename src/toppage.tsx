@@ -14,6 +14,21 @@ function TOP(){
 
                 <h1>Hina's Portfolio</h1>
                 <img src={hydrangea} alt="紫陽花イラスト" />
+
+                <h2>Works</h2>
+                <h3>appeal works</h3>
+                
+                <div></div>
+                <p>Web</p>
+                <p>作品名</p>
+                <p>2000.9</p>
+
+                <div></div>
+                <p>Web</p>
+                <p>作品名</p>
+                <p>2000.9</p>
+
+                <h3>others</h3>
             </div>
         </>
     )
