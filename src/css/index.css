@@ -1,0 +1,11 @@
+/* Googleフォント指定 */
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+body{
+    height: 100%;
+    background: linear-gradient(#51AFFF,#E3DEF3 );
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+}
