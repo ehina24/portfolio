@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import '../src/css/toppage.css';
 import hydrangea from './assets/img/hydrangea.svg';
+import mentabi_thumbnail from './assets/img/mentabi_thumbnail.svg';
 
 
 function TOP(){
@@ -20,15 +21,15 @@ function TOP(){
 
                 <h2>Works</h2>
 
-                <div></div>
-                <p>Web</p>
-                <p>作品名</p>
-                <p>2000.9</p>
+                <button>Web</button>
+                <button>graphic</button>
+                <button>other</button>
 
-                <div></div>
-                <p>Web</p>
-                <p>作品名</p>
-                <p>2000.9</p>
+                <div>
+                    <img src={mentabi_thumbnail} alt="めんたびサムネイル画像" />
+                    <p>Web</p>
+                    <p>めんたび</p>
+                </div>
             </div>
         </>
     )
