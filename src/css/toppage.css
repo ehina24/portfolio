@@ -28,15 +28,143 @@ h1{
     right: 80px;
     top: 200px;
 }
-
 h2{
     font-size: 80px;
     font-weight: 400;
     margin-left: 60px;
+    margin-top: 160px;
+}
+h2:first-of-type{
+    margin-top: 0;
+}
+
+/* 切り替えボタン */
+.btnWrap{
+    display: flex;
+    gap: 160px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+    margin-bottom: 160px;
+}
+button{
+    font-size: 40px;
+    color: #FFF;
+}
+
+/* カテゴリー */
+.category{
+    display: inline-block;
+    color: #FFF;
+    font-size: 24px;
+    padding: 4px 12px;
+    border-radius: 5px;
+}
+.web{
+    background-color: #CAB8D9;
+}
+.graphic{
+    background-color: #E6AFCF;
+}
+
+/* 作品 */
+.worksWrap{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 80px 10px;
+    justify-items: center;
+}
+.work{
+    width: 400px;
+    text-decoration: none;
+    color: #FFF;
+}
+.work img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.workTitle{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 12px;
 }
 h3{
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 400;
-    text-align: center;
+}
+
+/* 自分について */
+.myInformationWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myInformation{
+    background-color: #CAB8D9;
+    width: 720px;
+    height: 314px;
+    padding-left: 8px;
+    position: relative;
+}
+.profileText{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.profileText .name{
+    font-size: 56px;
+}
+.profileText .graduationYear{
+    font-size: 24px;
+}
+.occupation{
+    font-size: 24px;
+    margin-top: 16px;
+}
+.myStrengths{
+    font-size: 20px;
+    line-height: 40px;
     margin-top: 40px;
+}
+.myInformationWrap button{
+    background-color: #CAB8D9;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    bottom: -120px;
+}
+.myInformationWrap button:hover{
+    background-color: #E6AFCF;
+}
+
+/*メールアドレス*/
+.mail{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 32px;
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.mail:hover{
+    color: #E6AFCF;
+}
+
+
+
+
+/* フッター */
+footer{
+    background-color: #CAB8D9;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    font-size: 16px;
 }
