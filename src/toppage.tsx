@@ -17,6 +17,7 @@ import my_photo from './assets/img/my_photo.svg';
 function TOP(){
     return(
         <>
+        <div className="topPageWrap">
             <div className="contentWrap">
                 <nav className="navWrap">
                     <a href="#works">Works</a>
@@ -39,7 +40,7 @@ function TOP(){
 
             <div className="worksWrap">
                 <Link to="/works/mentabi" className="work">
-                        <img src={mentabi_thumbnail} alt="めんたびサムネイル画像" />
+                        <img src={mentabi_thumbnail} alt="めんたびサムネイル" />
                         <div className="workTitle">
                             <p className="category web">Web</p>
                             <h3>めんたび</h3>
@@ -126,6 +127,7 @@ function TOP(){
                     <p>&copy;2026Hina's Portfolio</p>
                 </footer>
             </div>
+        </div>
         </>
     )
 }

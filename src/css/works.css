@@ -1,0 +1,45 @@
+/*Backボタン*/
+.backBtn{
+    font-size: 32px;
+    color: #FFF;
+    margin-top: 24px;
+    margin-left: 60px;
+}
+.workWrap{
+    display: flex;
+    justify-content: center;
+}
+.workWrap img{
+    width: 560px;
+    height: 100%;
+}
+h1{
+    font-size: 48px;
+}
+.season{
+    font-size: 20px;
+}
+h2{
+    margin-top: 8px;
+}
+.siteBtn{
+    background-color: #CAB8D9;
+    color: #FFF;
+    font-size: 24px;
+    width: 240px;
+    height: 64px;
+    margin-top: 32px;
+}
+
+.workReviewWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin:0 60px 32px 60px;
+}
+h3{
+    font-size: 32px;
+}
+.workReviewWrap p{
+    font-size: 24px;
+}
