@@ -6,7 +6,6 @@ import calendar from './assets/img/calendar.svg';
 import cafe_thumbnail from './assets/img/cafe_thumbnail.svg';
 import makevie_thumbnail from './assets/img/makevie_thumbnail.svg';
 import monomobag_thumbnail from './assets/img/monomobag_thumbnail.svg';
-import poster from './assets/img/poster.svg';
 import counter_thumbnail from './assets/img/counter_thumbnail.svg';
 import booklife_thumbnail from './assets/img/booklife_thumbnail.svg';
 import portfolio_thumbnail from './assets/img/portfolio_thumbnail.svg';
@@ -72,13 +71,6 @@ function TOP(){
                     <div className="workTitle">
                         <p className="category web">Web</p>
                         <h3>モノモバッグ</h3>
-                    </div>
-                </Link>
-                <Link to="/works/poster" className="work">
-                    <img src={poster} alt="ポスター" />
-                    <div className="workTitle">
-                        <p className="category graphic">graphic</p>
-                        <h3>キャンドルナイトポスター</h3>
                     </div>
                 </Link>
                 <Link to="/works/counter" className="work">
