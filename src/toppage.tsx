@@ -108,7 +108,7 @@ function TOP(){
                             教えてあげたり助けてあげたりすることができます。また物事には諦めずに
                             集中して取り組み、課題や目標を達成することができます。
                         </p>
-                        <button>View More</button>
+                        <Link to="/about/mypage"><button>View More</button></Link>
                     </div>
                 </div>
 

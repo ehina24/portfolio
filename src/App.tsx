@@ -8,6 +8,7 @@ import Monomobag from "./monomobag";
 import Counter from "./counter";
 import Booklife from "./booklife";
 import Portfolio from "./portfolio";
+import Mypage from "./mypage";
 
 function App(){
     return(
@@ -22,6 +23,7 @@ function App(){
             <Route path="/works/counter" element={<Counter />}/>
             <Route path="/works/booklife" element={<Booklife />}/>
             <Route path="/works/portfolio" element={<Portfolio />}/>
+            <Route path="/about/mypage" element={<Mypage />}/>
         </Routes>
         </>
     )
