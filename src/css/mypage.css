@@ -1,0 +1,83 @@
+h1{
+    font-size: 56px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.myProfileWrap{
+    display: flex;
+    gap: 56px;
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    padding: 0 60px;
+}
+.headingWrap p{
+    font-size: 24px;
+    text-align: center;
+}
+.myPageWrap h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+.myStrengthsWrap{
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    padding: 0 60px;
+}
+.strengthsHeading{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+h3{
+    font-size: 40px;
+}
+.strengthsText{
+    font-size: 24px;
+}
+
+.photoWrap{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    justify-items: center;
+    margin: 24px 0;
+}
+.photoItem{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+}
+
+.myPhoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photoItem p{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    opacity: 0;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.photoItem:hover p{
+    opacity: 1;
+}

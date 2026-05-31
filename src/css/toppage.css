@@ -113,10 +113,10 @@
     align-items: center;
     gap: 16px;
 }
-.profileText .name{
+.name{
     font-size: 56px;
 }
-.profileText .graduationYear{
+.graduationYear{
     font-size: 24px;
 }
 .occupation{

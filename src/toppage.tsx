@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import '../src/css/toppage.css';
 import hydrangea from './assets/img/hydrangea.svg';
 import mentabi_thumbnail from './assets/img/mentabi_thumbnail.svg';
@@ -12,8 +13,60 @@ import portfolio_thumbnail from './assets/img/portfolio_thumbnail.svg';
 import my_photo from './assets/img/my_photo.svg';
 
 
-
 function TOP(){
+    const [filter,setFilter] = useState("all");
+
+    const works = [
+        {
+            title:"めんたび",
+            category:"web",
+            image:mentabi_thumbnail,
+            path:"/works/mentabi"
+        },
+        {
+            title:"カレンダー",
+            category:"graphic",
+            image:calendar,
+            path:"/works/calendar"
+        },
+        {
+            title: "Personally Cafe",
+            category: "web",
+            image: cafe_thumbnail,
+            path: "/works/cafe"
+        },
+        {
+            title: "Makevie",
+            category: "web",
+            image: makevie_thumbnail,
+            path: "/works/makevie"
+        },
+        {
+            title: "モノモバッグ",
+            category: "web",
+            image: monomobag_thumbnail,
+            path: "/works/monomobag"
+        },
+        {
+            title: "カウンターカウンター",
+            category: "web",
+            image: counter_thumbnail,
+            path: "/works/counter"
+        },
+        {
+            title: "Booklife",
+            category: "web",
+            image: booklife_thumbnail,
+            path: "/works/booklife"
+        },
+        {
+            title: "Hina's Portfolio",
+            category: "web",
+            image: portfolio_thumbnail,
+            path: "/works/portfolio"
+        }
+    ];
+
     return(
         <>
         <div className="topPageWrap">
@@ -32,68 +85,30 @@ function TOP(){
                 <h2 id="works">Works</h2>
 
             <div className="btnWrap">
-                <button>Web</button>
-                <button>graphic</button>
-                <button>other</button>
+                <button onClick={() => setFilter("all")}>All</button>
+                <button onClick={() => setFilter("web")}>Web</button>
+                <button onClick={() => setFilter("graphic")}>Graphic</button>
+                <button onClick={() => setFilter("other")}>Other</button>
             </div>
 
             <div className="worksWrap">
-                <Link to="/works/mentabi" className="work">
-                        <img src={mentabi_thumbnail} alt="めんたびサムネイル" />
+                        {works
+                .filter(work => filter === "all" || work.category === filter)
+                .map(work => (
+                    <Link
+                        to={work.path}
+                        className="work"
+                        key={work.title}
+                    >
+                        <img src={work.image} alt={work.title} />
                         <div className="workTitle">
-                            <p className="category web">Web</p>
-                            <h3>めんたび</h3>
+                            <p className={`category ${work.category}`}>
+                                {work.category}
+                            </p>
+                            <h3>{work.title}</h3>
                         </div>
-                </Link>
-                <Link to="/works/calendar" className="work">
-                    <img src={calendar} alt="カレンダー" />
-                    <div className="workTitle">
-                        <p className="category graphic">graphic</p>
-                        <h3>カレンダー</h3>
-                    </div>
-                </Link>
-                <Link to="/works/cafe" className="work">
-                    <img src={cafe_thumbnail} alt="カフェサイトサムネイル" />
-                    <div className="workTitle">
-                        <p className="category web">Web</p>
-                        <h3>Personally Cafe</h3>
-                    </div>
-                </Link>
-                <Link to="/works/makevie" className="work">
-                    <img src={makevie_thumbnail} alt="Makevieサムネイル" />
-                    <div className="workTitle">
-                        <p className="category web">web</p>
-                        <h3>Makevie</h3>
-                    </div>
-                </Link>
-                <Link to="/works/monomobag" className="work">
-                    <img src={monomobag_thumbnail} alt="モノモバッグサムネイル" />
-                    <div className="workTitle">
-                        <p className="category web">Web</p>
-                        <h3>モノモバッグ</h3>
-                    </div>
-                </Link>
-                <Link to="/works/counter" className="work">
-                    <img src={counter_thumbnail} alt="カウンタカウンターサムネイル" />
-                    <div className="workTitle">
-                        <p className="category web">Web</p>
-                        <h3>カウンターカウンター</h3>
-                    </div>
-                </Link>
-                <Link to="/works/booklife" className="work">
-                    <img src={booklife_thumbnail} alt="Booklifeサムネイル" />
-                    <div className="workTitle">
-                        <p className="category web">Web</p>
-                        <h3>Booklife</h3>
-                    </div>
-                </Link>
-                <Link to="/works/portfolio" className="work">
-                    <img src={portfolio_thumbnail} alt="ポートフォリオサムネイル" />
-                    <div className="workTitle">
-                        <p className="category web">Web</p>
-                        <h3>Hina's Portfolio</h3>
-                    </div>
-                </Link>
+                    </Link>
+                ))}
             </div>
                 <h2 id="about">About</h2>
                 <div className="myInformationWrap">
