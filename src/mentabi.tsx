@@ -16,7 +16,7 @@ function Mentabi(){
                     <p>HTML・CSS・JavaScript・PHP・MySQL</p>
                     <h2>役割</h2>
                     <p>企画・サイトデザイン・コーディング・プレゼン</p>
-                    <a href="http://10.202.10.3/ecc/hendo/works/2/mentabi/" target="blank"><button className="siteBtn">サイトを見る</button></a>
+                    <a href="https://click.ecc.ac.jp/ecc/hendo/works/2/mentabi/" target="blank"><button className="siteBtn">サイトを見る</button></a>
                 </div>
             </div>
             <div className="workReviewWrap">
