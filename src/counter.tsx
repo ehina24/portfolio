@@ -5,7 +5,7 @@ import './css/works.css';
 function Counter(){
     return(
         <>
-        <div className="counterPageWrap">
+        <div className="counterPageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={counter_thumbnail} alt="カウンターカウンターサムネイル" />

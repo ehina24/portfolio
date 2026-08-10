@@ -5,7 +5,7 @@ import './css/works.css';
 function Portfolio(){
     return(
         <>
-        <div className="portfolioPageWrap">
+        <div className="portfolioPageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={portfolio_thumbnail} alt="ポートフォリオサムネイル" />

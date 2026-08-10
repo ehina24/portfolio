@@ -5,12 +5,13 @@ import './css/works.css';
 function Mentabi(){
     return(
         <>
-        <div className="mentabiPageWrap">
+        <div className="mentabiPageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={mentabi_thumbnail} alt="めんたびサムネイル" />
                 <div className="workInformation">
                     <h1>めんたび</h1>
+                    <p className="catchPhrase">和歌山ラーメンをきっかけに、<br/>和歌山市を楽しむ体験型情報サイト</p>
                     <p className="season">2年後期個人制作</p>
                     <h2>使用技術</h2>
                     <p>HTML・CSS・JavaScript・PHP・MySQL</p>
@@ -20,6 +21,7 @@ function Mentabi(){
                 </div>
             </div>
             <div className="workReviewWrap">
+                <h3>01</h3>
                 <h3>作品概要</h3>
                 <p>本作品は、和歌山ラーメンをきっかけに和歌山市をより深く楽しんでもらうための体験型情報サイトです。
                     ユーザーは簡単な診断から自分に合った一杯を見つけ、店舗情報やマップを通して実際に食べ歩くことが

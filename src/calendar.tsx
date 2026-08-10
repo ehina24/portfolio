@@ -5,7 +5,7 @@ import './css/works.css';
 function Calendar(){
     return(
         <>
-        <div className="calenderPageWrap">
+        <div className="calenderPageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={calendar} alt="カレンダー" className="graphicWork"/>

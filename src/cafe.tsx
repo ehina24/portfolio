@@ -5,7 +5,7 @@ import './css/works.css';
 function Cafe(){
     return(
         <>
-        <div className="cafePageWrap">
+        <div className="cafePageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={cafe_thumbnail} alt="カフェサムネイル"/>

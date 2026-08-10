@@ -5,7 +5,7 @@ import './css/works.css';
 function Makevie(){
     return(
         <>
-        <div className="makeviePageWrap">
+        <div className="makeviePageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={makevie_thumbnail} alt="Makevieサムネイル" />

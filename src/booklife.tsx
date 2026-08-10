@@ -5,7 +5,7 @@ import './css/works.css';
 function Booklife(){
     return(
         <>
-        <div className="booklifePageWrap">
+        <div className="booklifePageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={booklife_thumbnail} alt="booklifeサムネイル" />

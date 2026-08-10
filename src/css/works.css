@@ -1,7 +1,12 @@
+/*作品詳細ページ全体*/
+.workDetailPage{
+    background-color: #f7f7f7;
+    color: #333;
+}
 /*Backボタン*/
 .backBtn{
     font-size: 32px;
-    color: #FFF;
+    color: #333;
     margin-top: 24px;
     margin-left: 60px;
 }
@@ -17,8 +22,14 @@
 .workWrap .graphicWork{
     width:  400px;
 }
-h1{
-    font-size: 48px;
+.workInformation h1{
+    font-size: 56px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+.catchPhrase{
+    font-size: 32px;
+    margin-bottom: 24px;
 }
 .season{
     font-size: 20px;

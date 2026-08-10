@@ -5,7 +5,7 @@ import './css/works.css';
 function Monomobag(){
     return(
         <>
-        <div className="monomobagPageWrap">
+        <div className="monomobagPageWrap workDetailPage">
             <Link to="/"><button className="backBtn">Back</button></Link>
             <div className="workWrap">
                 <img src={monomobag_thumbnail} alt="モノモバッグサムネイル" />
