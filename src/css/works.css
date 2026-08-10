@@ -47,16 +47,70 @@ h2{
     margin-top: 32px;
 }
 
+/*作品説明*/
 .workReviewWrap{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
     max-width: 1200px;
-    margin: 0 auto 32px;
+    margin: 80px auto;
 }
-h3{
+/*作品概要*/
+.reviewMain{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #fefefe;
+    padding: 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.reviewMain img{
+    width: 320px;
+    height: 400px;
+}
+.reviewText p{
+    font-size: 20px;
+    margin: 0;
+}
+.reviewText p:first-of-type{
+    margin-top: 24px;
+}
+.reviewText p+p{
+    margin-top: 24px;
+}
+.reviewTitle{
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+.reviewTitle span{
+    font-size: 32px;
+    color: #CAB8D9;
+    font-weight: bold;
+}
+.reviewTitle h3{
     font-size: 32px;
 }
-.workReviewWrap p{
-    font-size: 20px;
+
+/*工夫した点*/
+.reviewGrid{
+    display: flex;
+    gap: 24px;
+    margin-top: 80px;
+}
+.reviewCard{
+    display: flex;
+    gap: 16px;
+    background-color: #fefefe;
+    padding: 40px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.reviewCard img{
+    width: 240px;
+    height: 320px;
+}
+.reviewCard h4{
+    font-size: 24px;
+    margin-top: 16px;
 }
