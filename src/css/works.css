@@ -63,9 +63,17 @@ h2{
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
-.reviewMain img{
+.reviewMain .app{
     width: 320px;
     height: 400px;
+}
+.reviewMain .webLarge{
+    width: 560px;
+    height: 320px;
+}
+.reviewCard .webSmall{
+    width: 220px;
+    height: 160px;
 }
 .reviewText p{
     font-size: 20px;
@@ -99,6 +107,7 @@ h2{
 }
 .reviewCard{
     display: flex;
+    align-items: center;
     gap: 16px;
     background-color: #fefefe;
     padding: 40px;
@@ -106,9 +115,14 @@ h2{
     box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
 }
-.reviewCard img{
-    width: 240px;
-    height: 320px;
+.reviewCard .reviewText{
+    flex: 1;
+}
+.reviewCard video{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
 }
 .reviewCard h4{
     font-size: 24px;

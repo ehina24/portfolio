@@ -36,7 +36,7 @@ function Mentabi(){
                             できます。スタンプラリー機能によって旅の達成感を高め、ラーメンの魅力と街の魅力を同時に味わえる
                             構成にしました。食を入り口に、和歌山市を歩いて知るきっかけをつくる “旅と食の案内役” を目指しています。</p>
                     </div>
-                        <img src={mentabi_home} alt="めんたびホーム画面" />
+                        <img src={mentabi_home} alt="めんたびホーム画面" className="qpp"/>
                 </section>
                 <div className="reviewGrid">
                     <section className="reviewCard">
