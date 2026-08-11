@@ -36,7 +36,7 @@ function Mentabi(){
                             できます。スタンプラリー機能によって旅の達成感を高め、ラーメンの魅力と街の魅力を同時に味わえる
                             構成にしました。食を入り口に、和歌山市を歩いて知るきっかけをつくる “旅と食の案内役” を目指しています。</p>
                     </div>
-                        <img src={mentabi_home} alt="めんたびホーム画面" className="qpp"/>
+                        <img src={mentabi_home} alt="めんたびホーム画面" className="app"/>
                 </section>
                 <div className="reviewGrid">
                     <section className="reviewCard">
@@ -49,7 +49,7 @@ function Mentabi(){
                             <p>住所を文字だけで表示するのではなく、Googleマップを埋め込むことで、
                                 利用者が場所を直感的に把握できるようにしました。</p>
                         </div>
-                        <img src={mentabi_ingenuity} alt="めんたびマップ画面" />
+                        <img src={mentabi_ingenuity} alt="めんたびマップ画面" className="app"/>
                     </section>
                     <section className="reviewCard">
                         <div className="reviewText">
@@ -57,11 +57,11 @@ function Mentabi(){
                                 <span>03</span>
                                 <h3>工夫した点-2</h3>
                             </div>
-                            <h4>自分に合ったラーメンを<br/>見つけられる診断機能</h4>
+                            <h4>自分に合うラーメンを<br/>見つけられる診断機能</h4>
                             <p>簡単な質問に答えるだけで、ユーザーの好みに合った
                                 ラーメンを提案する診断機能を実装しました。</p>
                         </div>
-                        <img src={mentabi_diagnosis} alt="めんたび診断画面" />
+                        <img src={mentabi_diagnosis} alt="めんたび診断画面" className="app"/>
                     </section>
                 </div>
                 <div className="reviewGrid">
