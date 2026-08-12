@@ -21,7 +21,7 @@ function Mypage(){
                 <div className="myProfile">
                     <p className="name">遠藤妃菜</p>
                     <p className="graduationYear">2027年3月卒業予定</p>
-                    <p className="occupation">フロントエンドエンジニア志望</p>
+                    {/* <p className="occupation">フロントエンドエンジニア志望</p> */}
                     <p className="myStrengths">私は周りのことをしっかり見て行動できる人間です。困っている人
                         がいたら教えてあげたり助けてあげたりすることができます。また
                         物事には諦めずに集中して取り組み課題や目標を達成することができます。
