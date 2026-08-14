@@ -10,6 +10,10 @@ import monomobag_thumbnail from './assets/img/monomobag_thumbnail.svg';
 import counter_thumbnail from './assets/img/counter_thumbnail.svg';
 import booklife_thumbnail from './assets/img/booklife_thumbnail.svg';
 import portfolio_thumbnail from './assets/img/portfolio_thumbnail.svg';
+import business_card from './assets/img/business_card_front.png';
+import booklife_bookmark from './assets/img/booklife_bookmark_yellow.png';
+import booklife_leaflet from './assets/img/booklife_leaflet.jpeg';
+import mentabi_pr_thumbnail from './assets/img/mentabi_pr_thumbnail.jpg';
 import my_photo from './assets/img/my_photo.svg';
 
 
@@ -36,10 +40,22 @@ function TOP(){
             path: "/works/cafe"
         },
         {
+            title:"Booklife 栞",
+            category:"graphic",
+            image:booklife_bookmark,
+            path:"/works/booklife_bookmark"
+        },
+        {
             title: "Makevie",
             category: "web",
             image: makevie_thumbnail,
             path: "/works/makevie"
+        },
+        {
+            title:"名刺",
+            category:"graphic",
+            image:business_card,
+            path:"/works/business_card"
         },
         {
             title: "モノモバッグ",
@@ -54,6 +70,12 @@ function TOP(){
             path: "/works/counter"
         },
         {
+            title:"めんたびPR画像",
+            category:"graphic",
+            image:mentabi_pr_thumbnail,
+            path:"/works/mentabi_pr_thumbnail"
+        },
+        {
             title: "Booklife",
             category: "web",
             image: booklife_thumbnail,
@@ -64,6 +86,12 @@ function TOP(){
             category: "web",
             image: portfolio_thumbnail,
             path: "/works/portfolio"
+        },
+        {
+            title:"Booklife チラシ",
+            category:"graphic",
+            image:booklife_leaflet,
+            path:"/works/booklife_leaflet"
         }
     ];
 
